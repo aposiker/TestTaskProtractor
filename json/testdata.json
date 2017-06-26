@@ -1,0 +1,20 @@
+{
+  "ComputerNameToAdd":"TestAddinAppleComp",
+
+  "ComputerStartDateToAdd": "1971-01-01",
+
+  "ComputerEndDateToAdd": "2033-01-01",
+
+  "ComputerCompanyToAdd":"Apple Inc.",
+
+  "ComputerNameToUpdate":"TestAddinAppleComp",
+
+  "ComputerNewNameForUpdate":"TestUpdateAppleComp",
+
+  "ComputerStartDateToUpdate": "1988-01-01",
+
+  "ComputerEndDateToUpdate": "2017-01-01",
+
+  "ComputerCompanyToUpdate":"Apple Inc."
+
+}

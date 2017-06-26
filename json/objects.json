@@ -1,0 +1,60 @@
+{
+  "testsiteURL": "http://computer-database.herokuapp.com/computers",
+
+  "Locators":{
+    "MainPage":{
+      "AddComputerBtn": ".//*[@id='add']",
+
+      "SearchBtn": ".//*[@id='searchsubmit']",
+
+      "SearchTextField": ".//*[@id='searchbox']",
+
+      "AlertMessage": ".//*[@ class = 'alert-message warning']"
+
+    },
+    "AddCompPage":{
+
+      "ComputerName": ".//*[@id='name']",
+
+      "IntroducedDate":".//*[@id='introduced']",
+
+      "DiscontinuedDate":".//*[@id='discontinued']",
+
+      "CompanyDropDown":".//*[@id='company']",
+
+      "CreateThisComputerBtn":".//*[@value='Create this computer']",
+
+      "CancelBtn":".//*[text()='Cancel']"
+
+    },
+
+    "UpdateCompPage":{
+
+
+      "ComputerName": ".//*[@id='name']",
+
+      "IntroducedDate":".//*[@id='introduced']",
+
+      "DiscontinuedDate":".//*[@id='discontinued']",
+
+      "CompanyDropDown":".//*[@id='company']",
+
+      "SaveThisComputerBtn":".//*[@value='Save this computer']",
+
+      "CancelBtn":".//*[text()='Cancel']",
+
+      "DeleteThisCompBtn":".//*[@value='Delete this computer']"
+
+
+    }
+
+
+
+
+  }
+
+
+
+
+
+}

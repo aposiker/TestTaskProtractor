@@ -1,0 +1,22 @@
+{
+
+  "name": "ProtractorTests",
+  "version": "0.0.0",
+  "description": "ProtractorTests",
+  "main": "app.js",
+  "author": {
+    "name": "Anton",
+    "email": ""
+  },
+
+  "devDependencies": {
+
+    "protractor": "~5.1.2",
+    "jasmine-allure-reporter": "~1.0.1",
+    "selenium-webdriver": "^3.4.0"
+
+
+  }
+
+
+}
