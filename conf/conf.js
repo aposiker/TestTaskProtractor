@@ -26,9 +26,7 @@ exports.config = {
 
         browser.ignoreSynchronization=true;
 
-        // Override the timeout for webdriver.
-        browser.driver.manage().timeouts().implicitlyWait(10000);
-
+        
         var AllureReporter = require('jasmine-allure-reporter');
         jasmine.getEnv().addReporter(new AllureReporter({
             allureReport: {
