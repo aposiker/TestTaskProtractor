@@ -3,47 +3,47 @@
 
   "Locators":{
     "MainPage":{
-      "AddComputerBtn": ".//*[@id='add']",
+      "AddComputerBtn": "#add",
 
-      "SearchBtn": ".//*[@id='searchsubmit']",
+      "SearchBtn": "#searchsubmit",
 
-      "SearchTextField": ".//*[@id='searchbox']",
+      "SearchTextField": "#searchbox",
 
-      "AlertMessage": ".//*[@ class = 'alert-message warning']"
+      "AlertMessage": ".alert-message.warning"
 
     },
     "AddCompPage":{
 
-      "ComputerName": ".//*[@id='name']",
+      "ComputerName": "#name",
 
-      "IntroducedDate":".//*[@id='introduced']",
+      "IntroducedDate":"#introduced",
 
-      "DiscontinuedDate":".//*[@id='discontinued']",
+      "DiscontinuedDate":"#discontinued",
 
-      "CompanyDropDown":".//*[@id='company']",
+      "CompanyDropDown":"#company",
 
-      "CreateThisComputerBtn":".//*[@value='Create this computer']",
+      "CreateThisComputerBtn":"[class='btn primary']",
 
-      "CancelBtn":".//*[text()='Cancel']"
+      "CancelBtn":"[class='btn']"
 
     },
 
     "UpdateCompPage":{
 
 
-      "ComputerName": ".//*[@id='name']",
+      "ComputerName": "#name",
 
-      "IntroducedDate":".//*[@id='introduced']",
+      "IntroducedDate":"#introduced",
 
-      "DiscontinuedDate":".//*[@id='discontinued']",
+      "DiscontinuedDate":"#discontinued",
 
-      "CompanyDropDown":".//*[@id='company']",
+      "CompanyDropDown":"#company",
 
-      "SaveThisComputerBtn":".//*[@value='Save this computer']",
+      "SaveThisComputerBtn":".btn.primary",
 
-      "CancelBtn":".//*[text()='Cancel']",
+      "CancelBtn":"[class='btn']",
 
-      "DeleteThisCompBtn":".//*[@value='Delete this computer']"
+      "DeleteThisCompBtn":".btn.danger"
 
 
     }

@@ -4,6 +4,7 @@
 var objects = require("../json/objects.json");
 
 
+
 var HomePage = function(){
 
     this.navigateToURL = function(url){
@@ -14,22 +15,22 @@ var HomePage = function(){
 
     this.AddComputer = function () {
 
-        element(by.xpath(objects.Locators.MainPage.AddComputerBtn)).click();
+        $(objects.Locators.MainPage.AddComputerBtn).click();
         return require("./AddComputer.js");
     };
 
     this.AlertMessageText = function(){
 
-        return element(by.xpath(objects.Locators.MainPage.AlertMessage)).getText()
+        return $(objects.Locators.MainPage.AlertMessage).getText()
 
     };
 
     this.SearchComputerByName = function(name){
-         var searchTextBox = element(by.xpath(objects.Locators.MainPage.SearchTextField));
+        var searchTextBox = $(objects.Locators.MainPage.SearchTextField);
         searchTextBox.clear().then(function () {
             searchTextBox.sendKeys(name);
         });
-        element(by.xpath(objects.Locators.MainPage.SearchBtn)).click();
+        $(objects.Locators.MainPage.SearchBtn).click();
         return this;
 
     };
