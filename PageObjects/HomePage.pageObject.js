@@ -43,7 +43,7 @@ class HomePage {
     UpdateComputer(name){
 
         this.SearchComputerByName(name);
-        element(by.xpath('.//a[.="' + name + '"]')).click();
+        element(by.xpath(`.//a[.="${name}"]`)).click();
         // return require('./UpdateComputer.pageObject.js');
 
 
@@ -51,7 +51,7 @@ class HomePage {
 
     computerFound(name){
 
-        return element(by.xpath('.//a[.="' + name + '"]'));
+        return element(by.xpath(`.//a[.="${name}"]`));
     };
 
 
