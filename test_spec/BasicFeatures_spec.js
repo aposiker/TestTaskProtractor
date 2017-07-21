@@ -4,13 +4,19 @@
 var data = require('../json/testdata.json');
 var objects = require('../json/objects.json');
 
+const homepage = require('../PageObjects/HomePage.pageObject'),
+    addComputer = require('../PageObjects/AddComputer.pageObject'),
+    updateComputer = require('../PageObjects/UpdateComputer.pageObject');
+
+
 describe('Basic Features test', function () {
-    var homepage = require('../PageObjects/HomePage');
+
 
     it('should add new computer',function () {
 
         homepage.navigateToURL(objects.testsiteURL);
-        homepage.AddComputer().filloutComputerInfo(data.ComputerNameToAdd, data.ComputerStartDateToAdd,
+        homepage.addComputer();
+        addComputer.filloutComputerInfo(data.ComputerNameToAdd, data.ComputerStartDateToAdd,
                                                     data.ComputerEndDateToAdd, data.ComputerCompanyToAdd);
         expect(homepage.AlertMessageText()).toEqual('Done! Computer ' + data.ComputerNameToAdd + ' has been created');
     });
@@ -24,7 +30,8 @@ describe('Basic Features test', function () {
 
     it('should update created computer',function () {
 
-        homepage.UpdateComputer(data.ComputerNameToUpdate).updateComputerInfo(data.ComputerNewNameForUpdate,
+        homepage.UpdateComputer(data.ComputerNameToUpdate);
+        updateComputer.updateComputerInfo(data.ComputerNewNameForUpdate,
                                                                                 data.ComputerStartDateToUpdate,
                                                                                 data.ComputerEndDateToUpdate,
                                                                                 data.ComputerCompanyToUpdate);
@@ -35,7 +42,8 @@ describe('Basic Features test', function () {
 
     it('should delete created computer',function () {
 
-        homepage.UpdateComputer(data.ComputerNewNameForUpdate).deleteComputer();
+        homepage.UpdateComputer(data.ComputerNewNameForUpdate);
+        updateComputer.deleteComputer();
 
         expect(homepage.AlertMessageText()).toEqual('Done! Computer has been deleted');
     });
