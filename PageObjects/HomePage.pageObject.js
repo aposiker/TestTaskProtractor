@@ -9,7 +9,7 @@ class HomePage {
     constructor() {
         this.navigateToURL = function (url) {
 
-            browser.get(url);
+            return browser.get(url);
         };
         this.AddComputerBtn = $(objects.Locators.MainPage.AddComputerBtn);
         this.AlertMessage = $(objects.Locators.MainPage.AlertMessage);
@@ -19,13 +19,13 @@ class HomePage {
 
     addComputer(){
 
-        this.AddComputerBtn.click();
-        // return require("./AddComputer.pageObject.js");
+        return this.AddComputerBtn.click();
+
     };
 
     AlertMessageText(){
 
-        return this.AlertMessage.getText()
+        return this.AlertMessage.getText();
 
     };
 
@@ -35,17 +35,14 @@ class HomePage {
         self.searchTextBox.clear().then(function () {
             self.searchTextBox.sendKeys(name);
         });
-        this.SearchBtn.click();
-        return this;
+        return self.SearchBtn.click();
+
 
     };
 
-    UpdateComputer(name){
+    ClickOnComputer(name){
 
-        this.SearchComputerByName(name);
-        element(by.xpath(`.//a[.="${name}"]`)).click();
-        // return require('./UpdateComputer.pageObject.js');
-
+        return element(by.xpath(`.//a[.="${name}"]`)).click();
 
     };
 

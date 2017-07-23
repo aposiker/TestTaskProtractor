@@ -17,11 +17,11 @@ NodeJS should be installed before running any command/script related to this pro
 
 ### Installing
 
-In your local project folder run "npm install" command to resolve all dependencies for this project
+In your local project folder run ```npm install``` command to resolve all dependencies for this project
 
 ## Running the tests
 
-To run tests navigate to "project/conf/" folder and run command "protractor conf.js"
+To run tests navigate to project folder and run command ```webdriver-manager start``` and then ```protractor conf.js```
 
 ## Authors
 

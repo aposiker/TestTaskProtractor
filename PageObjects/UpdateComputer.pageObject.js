@@ -8,6 +8,7 @@ var SelectWrapper = require("../util/select-wrapper");
 class UpdateComputer {
 
     constructor(){
+        this.PageHeader = $(objects.Locators.PageHeader);
         this.nameTextBox = $(objects.Locators.UpdateCompPage.ComputerName);
         this.introduceDate = $(objects.Locators.UpdateCompPage.IntroducedDate);
         this.discontinuedDate = $(objects.Locators.UpdateCompPage.DiscontinuedDate);
@@ -29,17 +30,19 @@ class UpdateComputer {
             self.discontinuedDate.sendKeys(DescDate);
         });
         self.companySelector.selectByText(Company);
-        self.SaveThisComputerBtn.click();
-        // return require('./HomePage.pageObject.js');
 
+    };
+
+    pressSaveComputerBtn(){
+        return this.SaveThisComputerBtn.click();
     };
 
     deleteComputer() {
 
-        this.DeleteThisCompBtn.click();
-        return require('./HomePage.pageObject.js');
+        return this.DeleteThisCompBtn.click();
+
     };
 
-};
+}
 
 module.exports = new UpdateComputer();

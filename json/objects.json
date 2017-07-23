@@ -2,7 +2,11 @@
   "testsiteURL": "http://computer-database.herokuapp.com/computers",
 
   "Locators":{
+
+    "PageHeader": "#main>h1",
+
     "MainPage":{
+
       "AddComputerBtn": "#add",
 
       "SearchBtn": "#searchsubmit",
@@ -29,7 +33,6 @@
     },
 
     "UpdateCompPage":{
-
 
       "ComputerName": "#name",
 

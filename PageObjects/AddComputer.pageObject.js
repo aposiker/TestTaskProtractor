@@ -8,6 +8,7 @@ var SelectWrapper = require("../util/select-wrapper");
 
 class AddComputer{
     constructor() {
+        this.PageHeader = $(objects.Locators.PageHeader);
         this.ComputerName = $(objects.Locators.AddCompPage.ComputerName);
         this.IntroducedDate = $(objects.Locators.AddCompPage.IntroducedDate);
         this.DiscontinuedDate = $(objects.Locators.AddCompPage.DiscontinuedDate);
@@ -21,11 +22,14 @@ class AddComputer{
         this.IntroducedDate.sendKeys(IntrDate);
         this.DiscontinuedDate.sendKeys(DescDate);
         this.companyDropdown.selectByText(Company);
-        this.CreateThisComputerBtn.click();
-        // return require('./HomePage');
 
-    };
+    }
 
-};
+    pressAddComputerButton(){
+        return this.CreateThisComputerBtn.click();
+    }
+
+
+}
 
 module.exports = new AddComputer();
