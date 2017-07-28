@@ -12,10 +12,10 @@ exports.config = {
     }],
 
     specs: [
-        './Features/AddComputer.feature',
+        // './Features/AddComputer.feature',
         './Features/SearchComputer.feature',
-        './Features/UpdateComputer.feature',
-        './Features/DeleteComputer.feature'
+        // './Features/UpdateComputer.feature',
+        // './Features/DeleteComputer.feature'
     ],
 
     framework: 'custom',

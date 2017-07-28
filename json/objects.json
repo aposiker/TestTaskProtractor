@@ -13,8 +13,9 @@
 
       "SearchTextField": "#searchbox",
 
-      "AlertMessage": ".alert-message.warning"
+      "AlertMessage": ".alert-message.warning",
 
+      "ComputersTable": ".computers.zebra-striped>tbody>tr>td"
     },
     "AddCompPage":{
 
